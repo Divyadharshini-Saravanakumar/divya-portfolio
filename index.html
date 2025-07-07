@@ -37,6 +37,38 @@
       transition: all 0.5s ease;
     }
 
+    section {
+      padding: 3rem 2rem;
+    }
+
+    .section-content {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .btn {
+      display: block;
+      margin: 2rem auto 0;
+      background: var(--accent-dark);
+      color: black;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      font-weight: bold;
+      border: none;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ffe066;
+      transform: scale(1.05);
+    }
+
     #theme-toggle {
       position: fixed;
       top: 10px;
@@ -68,13 +100,25 @@
   <audio id="hover-sound" src="https://cdn.pixabay.com/audio/2023/03/28/audio_f29c5b9d3b.mp3"></audio>
   <audio id="click-sound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_5c35b9c396.mp3"></audio>
 
-  <!-- EXISTING CONTENT -->
-  <!-- Keep all current content as it is below this line -->
+  <section>
+    <div class="section-content">
+      <h2>Experience</h2>
+      <p>Experience content goes here...</p>
+    </div>
+  </section>
 
-  <!-- FLOATING ICONS, HEADER, NAV, SECTIONS, ETC... -->
+  <section>
+    <div class="section-content">
+      <h2>Projects</h2>
+      <p>Projects content goes here...</p>
+    </div>
+  </section>
+
+  <section>
+    <a href="Resume_Divya_Dharshini.pdf" class="btn" download>Download My Resume</a>
+  </section>
 
   <script>
-    // Typed animation
     var typed = new Typed(".typed", {
       strings: ["Aspiring Analyst", "Business | Data | Reporting", "Power BI • SQL • Python"],
       typeSpeed: 50,
@@ -82,32 +126,32 @@
       loop: true
     });
 
-    // Chart.js config remains unchanged
-    const ctx = document.getElementById('chart').getContext('2d');
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['Excel', 'Power BI', 'SQL', 'Python', 'R'],
-        datasets: [{
-          label: 'Proficiency Level',
-          data: [90, 85, 80, 75, 70],
-          backgroundColor: '#ffd700',
-          borderColor: '#4d0000',
-          borderWidth: 1
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          y: {
-            beginAtZero: true,
-            max: 100
+    const ctx = document.getElementById('chart')?.getContext('2d');
+    if (ctx) {
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Excel', 'Power BI', 'SQL', 'Python', 'R'],
+          datasets: [{
+            label: 'Proficiency Level',
+            data: [90, 85, 80, 75, 70],
+            backgroundColor: '#ffd700',
+            borderColor: '#4d0000',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100
+            }
           }
         }
-      }
-    });
+      });
+    }
 
-    // Theme Toggle with sound
     const toggleBtn = document.getElementById('theme-toggle');
     const hoverSound = document.getElementById('hover-sound');
     const clickSound = document.getElementById('click-sound');
