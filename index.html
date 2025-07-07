@@ -9,10 +9,22 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
     body {
-      font-family: 'Poppins', sans-serif;
-      background: #fdfdfd;
-      color: #333;
-    }
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #800000, #4d0000, #330000, #660000);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
     header {
       background: linear-gradient(135deg, #800000, #4d0000);
       color: white;
@@ -192,6 +204,7 @@
       </ul>
     </div>
   </section>
+<a href="Resume_Divya_Dharshini.pdf" download class="btn">Download My Resume</a>
 
   <section id="contact">
     <h2>Contact Me</h2>
