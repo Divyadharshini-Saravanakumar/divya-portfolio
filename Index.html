@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divya Dharshini | Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #800000, #4d0000);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p span { color: #ffd700; }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #4d0000;
+      padding: 0.8rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffd700; }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease-out;
+    }
+    h2 {
+      color: #800000;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+    .project, .experience, .education {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project h3, .experience h3, .education h3 {
+      margin-bottom: 0.5rem;
+    }
+    .tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+    .tools img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      transition: transform 0.3s;
+    }
+    .tools img:hover { transform: scale(1.2); }
+    .btn {
+      background: #800000;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 1rem;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #a00000; }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      background: #800000;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Divya Dharshini Saravanakumar</h1>
+    <p><span class="typed"></span></p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Analytical and detail-oriented Business & Data Analyst with a strong foundation in business strategy, operational reporting, and process optimization. Skilled in leveraging data to support informed decision-making, streamline reporting processes, and improve operational efficiency. Experienced in stakeholder collaboration, project support, and developing performance dashboards. Proficient in Excel, Power BI, SQL, and data visualization with a strong understanding of business management principles. Currently completing a postgraduate program in Predictive Analytics.</p>
+    <div class="tools">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R">
+      <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Power BI">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Excel">
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Workforce Cost Optimization Dashboard</h3>
+      <p>Designed an executive-level dashboard for HR budget allocation and cost analysis.</p>
+      <p><strong>Tools:</strong> Excel, Power BI</p>
+    </div>
+    <div class="project">
+      <h3>Spotify Music Data Visualization</h3>
+      <p>Developed an interactive dashboard to analyze top global tracks using API-enriched data and HTML visuals.</p>
+      <p><strong>Tools:</strong> Power BI, Python, HTML, Deneb</p>
+    </div>
+    <div class="project">
+      <h3>Retail Sales Analysis & Forecasting (Academic)</h3>
+      <p>Conducted time series forecasting and sales performance tracking. Automated reporting templates and presented seasonal trend insights.</p>
+      <p><strong>Tools:</strong> R, Power BI</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education">
+      <h3>Postgraduate Certificate – Predictive Analytics</h3>
+      <p>Conestoga College, Ontario | Sept 2024 – Apr 2025</p>
+    </div>
+    <div class="education">
+      <h3>Postgraduate Certificate – Business Analytics</h3>
+      <p>Conestoga College, Ontario | Sept 2023 – Apr 2024</p>
+    </div>
+    <div class="education">
+      <h3>Bachelor of Arts – Economics</h3>
+      <p>PSGR Krishnammal College, India</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <h3>HR Analyst Intern – RND Softech</h3>
+      <p>Coimbatore, India | Jan 2023 – Jun 2023</p>
+      <ul>
+        <li>Conducted compensation data analysis and forecasting to support budget planning.</li>
+        <li>Built interactive dashboards using Power BI to track workforce KPIs and cost-saving strategies.</li>
+        <li>Increased reporting efficiency by 20% through automation.</li>
+        <li>Used SQL to organize employee engagement data and identify process improvements.</li>
+      </ul>
+    </div>
+    <div class="experience">
+      <h3>Cashier – Food Basics</h3>
+      <p>Cambridge, ON | 2023 – 2025</p>
+      <ul>
+        <li>Handled transactions and reconciled sales with 99.9% accuracy.</li>
+        <li>Delivered customer service in a high-volume retail environment.</li>
+        <li>Gained exposure to retail management processes and POS systems.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Divya Dharshini Saravanakumar. All rights reserved.</p>
+  </footer>
+
+  <script>
+    var typed = new Typed(".typed", {
+      strings: ["Aspiring Analyst", "Business | Data | Reporting", "Power BI • SQL • Python"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+</body>
+</html>
